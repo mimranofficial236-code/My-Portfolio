@@ -1867,9 +1867,20 @@ body {
 
 /* Testimonials Responsive */
 @media (max-width: 768px) {
+    .testimonials {
+        padding: 4rem 0;
+    }
+    
     .testimonials-slider {
-        max-width: 100%;
-        padding: 0 1rem;
+        max-width: calc(100% - 2rem);
+        margin: 0 1rem;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    .testimonials-track {
+        display: flex;
+        gap: 0;
     }
     
     .testimonial-card {
@@ -1877,6 +1888,8 @@ body {
         margin: 0;
         flex: 0 0 100%;
         min-width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .testimonial-header {
