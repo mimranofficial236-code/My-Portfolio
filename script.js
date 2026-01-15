@@ -189,3 +189,114 @@ document.addEventListener('mousemove', (e) => {
         shape.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
     });
 });
+
+// ===== Testimonials Slider =====
+const initTestimonialsSlider = () => {
+    const track = document.querySelector('.testimonials-track');
+    const cards = document.querySelectorAll('.testimonial-card');
+    const dotsContainer = document.querySelector('.slider-dots');
+    const prevBtn = document.querySelector('.slider-btn.prev');
+    const nextBtn = document.querySelector('.slider-btn.next');
+    
+    if (!track || cards.length === 0) return;
+    
+    let currentIndex = 0;
+    const totalSlides = cards.length;
+    
+    // Create dots
+    cards.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('slider-dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+    
+    const dots = document.querySelectorAll('.slider-dot');
+    
+    const updateSlider = () => {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    };
+    
+    const goToSlide = (index) => {
+        currentIndex = index;
+        updateSlider();
+    };
+    
+    const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
+    };
+    
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+    };
+    
+    prevBtn?.addEventListener('click', prevSlide);
+    nextBtn?.addEventListener('click', nextSlide);
+    
+    // Auto-play
+    let autoPlay = setInterval(nextSlide, 5000);
+    
+    track.addEventListener('mouseenter', () => clearInterval(autoPlay));
+    track.addEventListener('mouseleave', () => {
+        autoPlay = setInterval(nextSlide, 5000);
+    });
+    
+    // Touch support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        if (touchStartX - touchEndX > 50) nextSlide();
+        if (touchEndX - touchStartX > 50) prevSlide();
+    });
+};
+
+// ===== Enhanced Scroll Animations =====
+const initScrollAnimations = () => {
+    const projectCards = document.querySelectorAll('.project-card');
+    const highlightItems = document.querySelectorAll('.highlight-item');
+    const sections = document.querySelectorAll('.section');
+    
+    const observerOptions = {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const cardObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+    
+    projectCards.forEach(card => cardObserver.observe(card));
+    highlightItems.forEach(item => cardObserver.observe(item));
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    sections.forEach(section => sectionObserver.observe(section));
+};
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', () => {
+    initTestimonialsSlider();
+    initScrollAnimations();
+});

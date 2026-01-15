@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CSS Techniques You Should Know | Muhammad Imran</title>
+    <meta name="description" content="Explore CSS Grid, Container Queries, and other modern CSS features that will transform your layouts.">
+    <link rel="icon" type="image/png" href="../icon/Gemini_Generated_Image_4m4mdx4m4mdx4m4m.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MI<span class="logo-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <header class="post-header">
+            <div class="container">
+                <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Blog</a>
+                <span class="post-category">Tutorial</span>
+                <h1 class="post-title">Modern CSS Techniques You Should Know</h1>
+                <div class="post-meta">
+                    <span><i class="fas fa-user"></i> Muhammad Imran</span>
+                    <span><i class="fas fa-calendar"></i> December 28, 2024</span>
+                    <span><i class="fas fa-clock"></i> 10 min read</span>
+                </div>
+            </div>
+        </header>
+        
+<div class="post-content">
+            <div class="container">
+                <div class="post-body">
+                    <p class="lead">CSS has evolved dramatically. These modern techniques will help you write cleaner, more maintainable stylesheets.</p>
+
+                    <h2>1. Container Queries</h2>
+                    <p>Finally, we can style elements based on their container size, not just the viewport:</p>
+                    <div class="code-block">
+                        <pre><code>.card-container {
+  container-type: inline-size;
+}
+
+@container (min-width: 400px) {
+  .card {
+    display: flex;
+    gap: 1rem;
+  }
+}</code></pre>
+                    </div>
+
+                    <h2>2. CSS Nesting</h2>
+                    <p>Native CSS nesting is here—no preprocessor needed:</p>
+                    <div class="code-block">
+                        <pre><code>.card {
+  padding: 1rem;
+  
+  & .title {
+    font-size: 1.5rem;
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}</code></pre>
+                    </div>
+
+                    <h2>3. :has() Selector</h2>
+                    <p>The "parent selector" we've always wanted:</p>
+                    <div class="code-block">
+                        <pre><code>/* Style form groups that contain invalid inputs */
+.form-group:has(input:invalid) {
+  border-color: red;
+}</code></pre>
+                    </div>
+
+                    <div class="tip-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <p><strong>Pro Tip:</strong> Check browser support on caniuse.com before using these features in production.</p>
+                    </div>
+
+                    <h2>Conclusion</h2>
+                    <p>Modern CSS is more powerful than ever. Embrace these features to write better, more maintainable code.</p>
+
+                    <div class="post-tags">
+                        <span class="tag">CSS</span>
+                        <span class="tag">Frontend</span>
+                        <span class="tag">Web Development</span>
+                    </div>
+                </div>
+                <div class="post-sidebar">
+                    <div class="author-card">
+                        <img src="../icon/Gemini_Generated_Image_4m4mdx4m4mdx4m4m.png" alt="Muhammad Imran" class="author-img">
+                        <h3>Muhammad Imran</h3>
+                        <p>Frontend Developer passionate about creating amazing web experiences.</p>
+                    </div>
+                    <div class="share-card">
+                        <h4>Share this article</h4>
+                        <div class="share-links">
+                            <a href="#" class="share-btn"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="share-btn"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer class="footer"><div class="footer-content"><p>&copy; 2025 Muhammad Imran. All rights reserved.</p></div></footer>
+    <script src="../script.js"></script>
+</body>
+</html>

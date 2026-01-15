@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App | Muhammad Imran</title>
+    <meta name="description" content="Case study: Collaborative project management tool with drag-and-drop interface">
+    <link rel="icon" type="image/png" href="../icon/Gemini_Generated_Image_4m4mdx4m4mdx4m4m.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../case-study.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MI<span class="logo-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="case-hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <div class="case-hero-content">
+                <span class="case-category">Productivity Tool</span>
+                <h1 class="case-title">Task Management App</h1>
+                <p class="case-subtitle">Collaborative project management with drag-and-drop interface and real-time updates</p>
+                <div class="case-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>2024</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>2 Months</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-user"></i>
+                        <span>Full Stack Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Image -->
+    <section class="case-image-section">
+        <div class="container">
+            <div class="case-main-image">
+                <div class="project-placeholder-large">
+                    <i class="fas fa-tasks"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="case-section">
+        <div class="container">
+            <div class="case-grid">
+                <div class="case-content">
+                    <h2 class="case-section-title">Overview</h2>
+                    <p>This task management application was built to help teams organize their work efficiently. Inspired by tools like Trello and Asana, it provides an intuitive Kanban-style board where users can create, organize, and track tasks through different stages of completion.</p>
+                    <p>The application supports real-time collaboration, allowing multiple team members to work on the same board simultaneously. Changes are instantly reflected across all connected clients, making it perfect for remote teams.</p>
+                </div>
+                <div class="case-sidebar">
+                    <div class="tech-stack-card">
+                        <h3>Technologies Used</h3>
+                        <div class="tech-tags">
+                            <span>JavaScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Firebase</span>
+                            <span>Firestore</span>
+                            <span>Drag & Drop API</span>
+                            <span>PWA</span>
+                        </div>
+                    </div>
+                    <div class="links-card">
+                        <h3>Project Links</h3>
+                        <a href="#" class="case-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="case-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges -->
+    <section class="case-section case-section-alt">
+        <div class="container">
+            <h2 class="case-section-title centered">Challenges</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-hand-pointer"></i></div>
+                    <h3>Drag & Drop UX</h3>
+                    <p>Creating a smooth, intuitive drag-and-drop experience that works consistently across desktop and mobile devices.</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-users"></i></div>
+                    <h3>Real-time Sync</h3>
+                    <p>Handling concurrent edits from multiple users without data conflicts or race conditions.</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-wifi"></i></div>
+                    <h3>Offline Support</h3>
+                    <p>Enabling users to continue working when offline and syncing changes when connectivity is restored.</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                    <h3>Scalability</h3>
+                    <p>Designing the data structure to handle boards with hundreds of tasks without performance degradation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="case-section">
+        <div class="container">
+            <h2 class="case-section-title centered">Solutions</h2>
+            <div class="solutions-list">
+                <div class="solution-item">
+                    <div class="solution-number">01</div>
+                    <div class="solution-content">
+                        <h3>Custom Drag Library</h3>
+                        <p>Built a custom drag-and-drop system using the HTML5 Drag and Drop API with touch event fallbacks for mobile. Implemented visual feedback with ghost elements and drop zone highlighting.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">02</div>
+                    <div class="solution-content">
+                        <h3>Firebase Real-time Database</h3>
+                        <p>Leveraged Firestore's real-time listeners for instant updates. Implemented optimistic UI updates with rollback on conflict, and used transactions for atomic operations.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">03</div>
+                    <div class="solution-content">
+                        <h3>IndexedDB Caching</h3>
+                        <p>Implemented a service worker with IndexedDB for offline data persistence. Created a sync queue that processes pending changes when the connection is restored.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">04</div>
+                    <div class="solution-content">
+                        <h3>Virtual Scrolling</h3>
+                        <p>Implemented virtual scrolling for task lists, rendering only visible items. Used pagination for initial data loading and lazy-loaded archived tasks on demand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="case-section case-section-alt">
+        <div class="container">
+            <h2 class="case-section-title centered">Impact & Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <span class="result-number">35%</span>
+                    <span class="result-label">Productivity Increase</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-number">< 100ms</span>
+                    <span class="result-label">Sync Latency</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-number">4.8/5</span>
+                    <span class="result-label">User Rating</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-number">10K+</span>
+                    <span class="result-label">Tasks Created Daily</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="case-navigation">
+        <div class="container">
+            <a href="ecommerce-platform.html" class="nav-project prev">
+                <span class="nav-label">Previous Project</span>
+                <span class="nav-title"><i class="fas fa-arrow-left"></i> E-Commerce Platform</span>
+            </a>
+            <a href="analytics-dashboard.html" class="nav-project next">
+                <span class="nav-label">Next Project</span>
+                <span class="nav-title">Analytics Dashboard <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Muhammad Imran. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

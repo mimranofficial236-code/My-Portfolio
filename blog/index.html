@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Muhammad Imran - Frontend Developer</title>
+    <meta name="description" content="Web development insights, tutorials, and industry updates from Muhammad Imran">
+    <link rel="icon" type="image/png" href="../icon/Gemini_Generated_Image_4m4mdx4m4mdx4m4m.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MI<span class="logo-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="index.html" class="active">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="blog-hero">
+        <div class="container">
+            <h1 class="blog-hero-title">Blog & Updates</h1>
+            <p class="blog-hero-subtitle">Insights, tutorials, and thoughts on web development</p>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                <button class="filter-btn" data-filter="insights">Insights</button>
+                <button class="filter-btn" data-filter="news">News</button>
+            </div>
+   
+         <div class="blog-grid">
+                <article class="blog-card" data-category="tutorial">
+                    <div class="blog-card-image">
+                        <div class="blog-placeholder"><i class="fab fa-angular"></i></div>
+                        <span class="blog-category">Tutorial</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 10, 2025</span>
+                            <span><i class="fas fa-clock"></i> 8 min read</span>
+                        </div>
+                        <h2>Building Scalable Angular Applications</h2>
+                        <p>Learn best practices for structuring large Angular projects with lazy loading, state management, and modular architecture.</p>
+                        <a href="angular-scalable-apps.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="insights">
+                    <div class="blog-card-image">
+                        <div class="blog-placeholder"><i class="fas fa-rocket"></i></div>
+                        <span class="blog-category">Insights</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 5, 2025</span>
+                            <span><i class="fas fa-clock"></i> 6 min read</span>
+                        </div>
+                        <h2>Web Performance Optimization in 2025</h2>
+                        <p>Discover the latest techniques for optimizing web performance, from Core Web Vitals to modern image formats.</p>
+                        <a href="web-performance-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tutorial">
+                    <div class="blog-card-image">
+                        <div class="blog-placeholder"><i class="fab fa-css3-alt"></i></div>
+                        <span class="blog-category">Tutorial</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 28, 2024</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <h2>Modern CSS Techniques You Should Know</h2>
+                        <p>Explore CSS Grid, Container Queries, and other modern CSS features that will transform your layouts.</p>
+                        <a href="modern-css-techniques.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="news">
+                    <div class="blog-card-image">
+                        <div class="blog-placeholder"><i class="fab fa-js"></i></div>
+                        <span class="blog-category">News</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Dec 20, 2024</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h2>JavaScript Trends to Watch in 2025</h2>
+                        <p>From AI integration to new frameworks, here are the JavaScript trends shaping the future of web development.</p>
+                        <a href="javascript-trends-2025.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="blog-slider-controls">
+                <button class="blog-slider-btn prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                <div class="blog-slider-dots"></div>
+                <button class="blog-slider-btn next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="footer-content"><p>&copy; 2025 Muhammad Imran. All rights reserved.</p></div></footer>
+    <script src="../script.js"></script>
+    <script src="../blog.js"></script>
+</body>
+</html>

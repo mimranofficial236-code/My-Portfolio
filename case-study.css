@@ -1,0 +1,426 @@
+/* ===== Case Study Styles ===== */
+
+/* Hero Section */
+.case-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.case-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, var(--gray) 0%, var(--darker) 100%);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    gap: 1rem;
+}
+
+.case-hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.case-category {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    color: var(--primary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.ca
+se-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.case-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.case-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.meta-item i {
+    color: var(--primary);
+}
+
+/* Main Image */
+.case-image-section {
+    padding: 0 2rem;
+    margin-top: -50px;
+    position: relative;
+    z-index: 20;
+}
+
+.case-main-image {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.project-placeholder-large {
+    height: 400px;
+    background: linear-gradient(135deg, var(--gray), var(--darker));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    color: var(--primary);
+}
+
+/* Case Sections */
+.case-section {
+    padding: 5rem 2rem;
+}
+
+.case-section-alt {
+    background: var(--darker);
+}
+
+.case-section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.case-section-title.centered {
+    text-align: center;
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.case-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Sidebar Cards */
+.tech-stack-card, .links-card {
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack-card h3, .links-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: var(--light);
+    margin-bottom: 1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tags span {
+    padding: 0.4rem 0.8rem;
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--primary);
+    font-size: 0.85rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 240, 255, 0.3);
+}
+
+.case-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.case-link:last-child {
+    border-bottom: none;
+}
+
+.case-link:hover {
+    padding-left: 0.5rem;
+}
+
+/* Challenges Grid */
+.challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.challenge-card {
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.2);
+}
+
+.challenge-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1rem;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--dark);
+}
+
+.challenge-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.challenge-card p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+}
+
+
+/* Solutions List */
+.solutions-list {
+    max-width: 800px;
+    margin: 2rem auto 0;
+}
+
+.solution-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: rgba(0, 240, 255, 0.03);
+    border-radius: 15px;
+    border-left: 3px solid var(--primary);
+    transition: all 0.3s ease;
+}
+
+.solution-item:hover {
+    background: rgba(0, 240, 255, 0.08);
+    transform: translateX(10px);
+}
+
+.solution-number {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    opacity: 0.5;
+    line-height: 1;
+}
+
+.solution-content h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.solution-content p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.result-card {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.result-card:hover {
+    transform: scale(1.05);
+    border-color: var(--primary);
+    box-shadow: var(--glow);
+}
+
+.result-number {
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.result-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Case Navigation */
+.case-navigation {
+    padding: 3rem 2rem;
+    background: var(--dark);
+    border-top: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.case-navigation .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-project {
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    flex: 1;
+    max-width: 300px;
+}
+
+.nav-project:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.nav-project.next {
+    text-align: right;
+    margin-left: auto;
+}
+
+.nav-label {
+    display: block;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.nav-project.next .nav-title {
+    justify-content: flex-end;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .case-hero {
+        padding-top: 80px;
+        min-height: 50vh;
+    }
+    
+    .case-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .case-sidebar {
+        order: -1;
+    }
+    
+    .project-placeholder-large {
+        height: 250px;
+        font-size: 5rem;
+    }
+    
+    .solution-item {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .case-navigation .container {
+        flex-direction: column;
+    }
+    
+    .nav-project {
+        max-width: 100%;
+    }
+    
+    .nav-project.next {
+        text-align: left;
+    }
+    
+    .nav-project.next .nav-title {
+        justify-content: flex-start;
+    }
+}

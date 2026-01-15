@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Platform | Muhammad Imran</title>
+    <meta name="description" content="Case study: Full-featured e-commerce platform built with Angular, TypeScript, and Node.js">
+    <link rel="icon" type="image/png" href="../icon/Gemini_Generated_Image_4m4mdx4m4mdx4m4m.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../case-study.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MI<span class="logo-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Case Study Hero -->
+    <section class="case-hero">
+        <div class="case-hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            <div class="case-hero-content">
+                <span class="case-category">Web Application</span>
+                <h1 class="case-title">E-Commerce Platform</h1>
+                <p class="case-subtitle">A full-featured online store with real-time inventory and secure payments</p>
+                <div class="case-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span>2024</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <span>3 Months</span>
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-user"></i>
+                        <span>Lead Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Image -->
+    <section class="case-image-section">
+        <div class="container">
+            <div class="case-main-image">
+                <div class="project-placeholder-large">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="case-section">
+        <div class="container">
+            <div class="case-grid">
+                <div class="case-content">
+                    <h2 class="case-section-title">Overview</h2>
+                    <p>This e-commerce platform was designed to provide a seamless shopping experience for both customers and administrators. The project involved creating a scalable, performant web application that could handle thousands of concurrent users while maintaining fast load times and a smooth user interface.</p>
+                    <p>The platform features a modern, responsive design that works flawlessly across all devices, from desktop computers to mobile phones. Special attention was paid to accessibility and user experience to ensure all customers can easily navigate and complete purchases.</p>
+                </div>
+                <div class="case-sidebar">
+                    <div class="tech-stack-card">
+                        <h3>Technologies Used</h3>
+                        <div class="tech-tags">
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express.js</span>
+                            <span>Stripe API</span>
+                            <span>Socket.io</span>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                    <div class="links-card">
+                        <h3>Project Links</h3>
+                        <a href="#" class="case-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="#" class="case-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges -->
+    <section class="case-section case-section-alt">
+        <div class="container">
+            <h2 class="case-section-title centered">Challenges</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-sync-alt"></i></div>
+                    <h3>Real-time Inventory</h3>
+                    <p>Managing inventory updates across multiple users simultaneously without conflicts or overselling products.</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Performance at Scale</h3>
+                    <p>Ensuring fast page loads and smooth interactions even during high-traffic periods like sales events.</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Payment Security</h3>
+                    <p>Implementing secure payment processing while maintaining PCI compliance and protecting user data.</p>
+                </div>
+                <div class="challenge-card">
+                    <div class="challenge-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Experience</h3>
+                    <p>Creating a native-like mobile experience with touch-optimized interactions and offline capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="case-section">
+        <div class="container">
+            <h2 class="case-section-title centered">Solutions</h2>
+            <div class="solutions-list">
+                <div class="solution-item">
+                    <div class="solution-number">01</div>
+                    <div class="solution-content">
+                        <h3>WebSocket Integration</h3>
+                        <p>Implemented Socket.io for real-time inventory updates, ensuring all users see accurate stock levels instantly. Used Redis for session management and caching to handle concurrent connections efficiently.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">02</div>
+                    <div class="solution-content">
+                        <h3>Lazy Loading & CDN</h3>
+                        <p>Implemented Angular's lazy loading for route modules, reducing initial bundle size by 60%. Integrated Cloudflare CDN for static assets and implemented image optimization with WebP format support.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">03</div>
+                    <div class="solution-content">
+                        <h3>Stripe Integration</h3>
+                        <p>Integrated Stripe for secure payment processing with 3D Secure authentication. Implemented webhook handlers for payment confirmations and automated refund processing.</p>
+                    </div>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">04</div>
+                    <div class="solution-content">
+                        <h3>Progressive Web App</h3>
+                        <p>Converted the application to a PWA with service workers for offline browsing, push notifications for order updates, and app-like installation on mobile devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="case-section case-section-alt">
+        <div class="container">
+            <h2 class="case-section-title centered">Impact & Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <span class="result-number">40%</span>
+                    <span class="result-label">Increase in Conversions</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-number">2.5s</span>
+                    <span class="result-label">Average Load Time</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-number">99.9%</span>
+                    <span class="result-label">Uptime Achieved</span>
+                </div>
+                <div class="result-card">
+                    <span class="result-number">50K+</span>
+                    <span class="result-label">Monthly Active Users</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="case-navigation">
+        <div class="container">
+            <a href="task-management.html" class="nav-project next">
+                <span class="nav-label">Next Project</span>
+                <span class="nav-title">Task Management App <i class="fas fa-arrow-right"></i></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Muhammad Imran. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
