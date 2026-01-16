@@ -8,6 +8,27 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// ===== Theme Toggle =====
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+
+// Check for saved theme preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+    body.classList.add('light-mode');
+}
+
+themeToggle?.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+    
+    // Save preference
+    if (body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light');
+    } else {
+        localStorage.setItem('theme', 'dark');
+    }
+});
+
 // ===== Mobile Menu Toggle =====
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
