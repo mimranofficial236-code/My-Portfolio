@@ -13,11 +13,40 @@
 
 /* Light Mode Variables */
 body.light-mode {
-    --dark: #f5f5f5;
-    --darker: #ffffff;
+    --dark: #ffffff;
+    --darker: #f5f5f5;
     --light: #1a1a1a;
     --gray: #e8e8e8;
-    --glow: 0 0 20px rgba(123, 44, 191, 0.3);
+    --primary: #0066cc;
+    --secondary: #6b1fa0;
+    --accent: #d32f2f;
+    --gradient: linear-gradient(135deg, #0066cc, #6b1fa0);
+    --glow: 0 0 20px rgba(0, 102, 204, 0.3);
+}
+
+body.light-mode .shape {
+    opacity: 0.15;
+}
+
+body.light-mode .grid-overlay {
+    background-image: 
+        linear-gradient(rgba(0, 102, 204, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 102, 204, 0.05) 1px, transparent 1px);
+}
+
+body.light-mode .navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .project-placeholder,
+body.light-mode .blog-placeholder {
+    background: linear-gradient(135deg, #e8e8e8, #f5f5f5);
+}
+
+body.light-mode .modal-box {
+    background: linear-gradient(135deg, #ffffff, #f5f5f5);
+    border: 1px solid rgba(0, 102, 204, 0.3);
 }
 
 *, *::before, *::after {
